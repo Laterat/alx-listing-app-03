@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+
+/* Hide the Next.js dev indicator badge */
+div[style*="z-index: 999999999"] {
+  display: none !important;
+}
