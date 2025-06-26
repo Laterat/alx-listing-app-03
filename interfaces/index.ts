@@ -1,14 +1,26 @@
 
 
-export interface CardProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  children?: React.ReactNode;
+
+
+export interface PropertyAddress {
+  state: string;
+  city: string;
+  country: string;
 }
 
-export interface ButtonProps {
-  label: string;
-  onClick: () => void;
-  disabled?: boolean;
+export interface PropertyOffers {
+  bed: string;
+  shower: string;
+  occupants: string;
+}
+
+export interface PropertyProps {
+  name: string;
+  address: PropertyAddress;
+  rating: number;
+  category: string[];
+  price: number;
+  offers: PropertyOffers;
+  image: string;
+  discount: string;
 }
