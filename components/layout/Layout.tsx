@@ -1,9 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-
-interface LayoutProps {
-  children: React.ReactNode;
-}
+import { type LayoutProps } from "@/interfaces";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
@@ -13,6 +10,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Footer />
     </>
   );
-};
+}
 
 export default Layout;
