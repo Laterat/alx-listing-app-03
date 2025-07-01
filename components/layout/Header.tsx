@@ -96,7 +96,7 @@ const Header = () => {
 
         <Image src='/assets/profile 1.png' alt='profile' width={46} height={46} className='lg:hidden bg-[#34967C]'/>
       </div>
-      <div className='flex justify-between px-4 md:px-16'>
+      <div className='flex overflow-x-auto whitespace-nowrap px-4 gap-x-4 md:px-16 items-center  hide-scrollbar'>
         <Options  />
       </div>
     </header>

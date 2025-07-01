@@ -1,107 +1,66 @@
-import React from 'react'
 import Image from 'next/image'
-import logo from '../../public/assets/Vector.png'
-import { FaSearch } from 'react-icons/fa'
-import Option from './Option'
-import Options from './Options'
+import React from 'react'
 
-
-
-const Header = () => {
+const Footer: React.FC = () => {
   return (
-    <header className='min-w-screen '>
-      <div className='flex items-center justify-center pt-8 bg-[#34967C] text-white text-sm px-4 h-23 space-x-3 md:h-12  md:pt-0 md:text-lg'>
-        <div>Overseas trip? Get the latest information on travel guides</div>  
-        <button className='bg-[#161117] rounded-full min-w-[86px] p-1'>More Info</button>
-      </div>
-      <div className='flex justify-between items-center h-16 my-3 px-4 border  md:px-16'>
-        <Image src={logo} alt='logo' className='hidden md:inline-block'/>
+    <footer className='bg-[#222222]'>
+      <div className='bg-[#34967C] h-6'></div>
+      <div className='flex flex-col gap-9 p-10 justify-between lg:flex-row'>
 
-        {/* Tablet view search */}
-        <form className=" hidden relative bg-white px-4 rounded-full border border-[#BEBEBE]  w-full max-w-[737px] mx-auto md:flex justify-between gap-y-4 h-full md:w-[80%]">
-
-          {/* Location */}
-          <div className="relative w-full md:w-[40%] lg:w-[28%]">
-            <label htmlFor="dest" className="absolute top-1 left-3 text-[#161117] text-sm">Location</label>
-            <input
-              type="text"
-              id="dest"
-              placeholder="Search for destination"
-              className="pt-6 pb-2 px-4 w-full border-r  text-[#BEBEBE] focus:outline-none"
-            />
-          </div>
-
-          {/* Check In */}
-          <div className="relative w-[48%] md:w-[28%]">
-            <label htmlFor="check-in" className="absolute top-1 left-3 text-[#161117] text-sm">Check In</label>
-            <input
-              type="text"
-              id="check-in"
-              placeholder="Add date"
-              className="pt-6 pb-2 px-4 w-full border-r  text-[#BEBEBE] focus:outline-none"
-            />
-          </div>
-
-          {/* Check Out */}
-          <div className="relative w-[48%] md:w-[28%]">
-            <label htmlFor="check-out" className="absolute top-1 left-3 text-[#161117] text-sm">Check Out</label>
-            <input
-              type="text"
-              id="check-out"
-              placeholder="Add date"
-              className="pt-6 pb-2 px-4 w-full border-r  text-[#BEBEBE] focus:outline-none"
-            />
-          </div>
-
-          {/* People */}
-          <div className="relative w-[48%] md:w-[28%]">
-            <label htmlFor="people" className="absolute top-1 left-3 text-[#161117] text-sm">People</label>
-            <input
-              type="text"
-              id="people"
-              placeholder="Add guest"
-              className="pt-6 pb-2 px-4 w-full text-[#BEBEBE] focus:outline-none"
-            />
-          </div>
-
-          {/* Search Button */}
-          <div className="flex items-end justify-end w-[48%] md:w-[10%]">
-            <button type="submit" className="bg-[#FFA800] text-white p-3 rounded-full text-center w-auto h-auto mb-2">
-              <FaSearch className="text-xl" />
-            </button>
-          </div>
-
-        </form>
-
-        {/* Mobile view */}
-        <div className='container border border-[#BEBEBE] py-4  max-w-[318px] rounded-full max-h-full md:hidden'>
-          <form className='flex items-center ml-5  -mt-4 mb-56'>
-            <div className='flex flex-col '>
-              <label htmlFor='location' className='text-[#161117]'>Where to</label>
-              <input type='text' placeholder='Location' className=' w-28 text-[#BEBEBE]' />
-            </div>
-            <input type='text' placeholder='Date' className=' w-15 pt-5.5 -ml-8 text-[#BEBEBE]' />
-            <input type='text' placeholder='Add Guest' className=' w-20 pt-5.5 text-[#BEBEBE]' />
-            <div className="flex items-end justify-end w-[48%] md:w-[10%]">
-            <button type="submit" className="bg-[#FFA800] text-white p-3 rounded-full text-center w-auto h-auto mt-2 mx-2">
-              <FaSearch className="text-xl" />
-            </button>
-          </div>
-          </form>
+        <div className='flex flex-col '>
+          <Image src='/assets/vector white.png' alt='logo' width={58.73} height={30.6} className='mb-4'/>
+          <p className='text-[#CACACA] w-fit md:w-xl'>
+            ALX is a platform where travelers can discover and book unique, comfortable, and affordable lodging options worldwide. From cozy city apartments and tranquil countryside retreats to exotic beachside villas, ALX connects you with the perfect place to stay for any trip.
+          </p>
         </div>
 
-        <div className='hidden lg:flex gap-2 whitespace-nowrap'>
-          <button className='bg-[#34967C] p-2 rounded-4xl'>Sign in</button>
-          <button className='border border-[#ECECEC] bg-white text-black p-2 rounded-4xl'>Sign up</button>
+        <div className='grid grid-cols-2 gap-x-12 gap-y-6 w-fit px-10  md:grid-cols-3 md:w-full lg:w-2xl'>
+          <div className='w-fit'>
+            <h2 className='text-[#CACACA] mb-4 font-medium text-2xl'>Explore</h2>
+            <ul className='text-[#CACACA] text-sm'>
+              <li className='mb-2'>Apartments in Dubai</li>
+              <li className='mb-2'>Hotels in New York</li>
+              <li className='mb-2'>Villa in Spain</li>
+              <li className='mb-2'>Mansion in Indonesia</li>
+            </ul>
+          </div>
+          <div className='w-fit'>
+            <h2 className='text-[#CACACA] mb-4 font-medium text-2xl'>Company</h2>
+            <ul className='text-[#CACACA] text-sm'>
+              <li className='mb-2'>About us</li>
+              <li className='mb-2'>Blog</li>
+              <li className='mb-2'>Career</li>
+              <li className='mb-2'>Customers</li>
+              <li className='mb-2'>Brand</li>
+            </ul>
+          </div>
+          <div className='w-fit'>
+            <h2 className='text-[#CACACA] mb-4 font-medium text-2xl'>Help</h2>
+            <ul className='text-[#CACACA] text-sm'>
+              <li className='mb-2'>Support</li>
+              <li className='mb-2'>Cancel booking</li>
+              <li className='mb-2'>Refunds Process</li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <Image src='/assets/profile 1.png' alt='profile' width={46} height={46} className='lg:hidden bg-[#34967C]'/>
+
+      <hr className="border-t border-gray-100 mx-5 mt-10 mb-4" />
+
+
+      <div className='flex flex-col py-3 text-[#CACACA] gap-8 lg:gap-83 pb-6 lg:flex-row lg:justify-between lg:px-12'>
+        <div className='text-sm mx-5 text-center w-fit lg:mx-0'>Some hotel requires you to cancel more than 24 hours before check-in. Details <span className='text-[#34967C]'>here</span></div>
+        <div className='mb-10 text-sm w-sm flex items-center justify-center gap-4 ml-4 mr-4  lg:mx-0'>
+          <div>Terms of Service</div>
+          <div>Policy service</div>
+          <div>Cookies Policy</div>
+          <div className='hidden md:inline-block'>Partners</div>
+        </div>
       </div>
-      <div className='flex justify-between px-4 md:px-16'>
-        <Options  />
-      </div>
-    </header>
+{/* md:ml-24 lg:ml-0 */}
+    </footer>
   )
 }
 
-export default Header
+export default Footer

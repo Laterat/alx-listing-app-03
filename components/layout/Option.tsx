@@ -4,8 +4,15 @@ import React from 'react'
 
 const Option: React.FC<OptionProps> = ({image, alt, height, width, className}) => {
   return (
-    <div className={className}>
-        <Image src={image} alt={alt} width={width} height={height}/>
+ <div className={`w-[100px] h-[100px] flex items-center justify-center flex-shrink-0 overflow-hidden ${className}`}>
+      <div className="relative w-[60px] h-[88px]">
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          className="object-contain"
+        />
+      </div>
     </div>
   )
 }

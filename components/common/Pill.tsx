@@ -3,12 +3,12 @@ import React from 'react'
 
 const Pill: React.FC<PillProps> = ({
     label,
-    bgColor = 'bg-white',
+    bgColor = 'bg-gray-50',
     textColor = 'text-[#161117]',
     className
 }) => {
   return (
-    <button className={`${bgColor} ${textColor} border border-[#E9E9E9] rounded-3xl max-h-fit w-fit p-2 ${className} transition duration-300 ease-in-out hover:bg-green-400`}>{label}</button>
+    <button className={`${bgColor} ${textColor}  border border-[#E9E9E9] rounded-3xl max-h-fit  px-4 py-2 ${className} transition duration-300 ease-in-out hover:bg-green-100 hover:text-green-600 hover:border-green-600`}>{label}</button>
   )
 }
 
