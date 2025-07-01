@@ -43,7 +43,7 @@ const index: React.FC = () => {
             <Pill label='Instant Book' className=' lg:inline-block'/>
           </div>
 
-          <div className='w-auto space-x-6 lg:space-x-2'>
+          <div className=' hidden w-auto space-x-6 lg:space-x-2'>
             <Pill label='Filter' className='hidden sm:inline-block' />
             <Pill label='Sort By: Highest Price' className='hidden md:inline-block'/>
           </div>
