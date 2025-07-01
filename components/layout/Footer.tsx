@@ -49,13 +49,13 @@ const Footer: React.FC = () => {
       <hr className="border-t border-gray-100 mx-5 mt-10 mb-4" />
 
 
-      <div className='flex flex-col py-3 text-[#CACACA] gap-8 lg:gap-83 pb-6 lg:flex-row lg:justify-between lg:px-12'>
+      <div className='flex flex-col py-3 text-[#CACACA] gap-8 lg:gap-83 pb-6 lg:flex-row lg:justify-between lg:px-12 '>
         <div className='text-sm mx-5 text-center w-fit lg:mx-0'>Some hotel requires you to cancel more than 24 hours before check-in. Details <span className='text-[#34967C]'>here</span></div>
-        <div className='mb-10 text-sm w-sm flex items-center justify-center gap-4 ml-4 mr-4  lg:mx-0'>
+        <div className='mb-10 text-sm w-sm flex items-center justify-center gap-4 ml-4 mr-4  lg:mx-0 desktop:flex '>
           <div>Terms of Service</div>
           <div>Policy service</div>
           <div>Cookies Policy</div>
-          <div className='hidden md:inline-block'>Partners</div>
+          <div className='hidden desktop:inline-block'>Partners</div>
         </div>
       </div>
 {/* md:ml-24 lg:ml-0 */}
