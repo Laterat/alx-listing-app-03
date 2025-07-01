@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
   return (
     <footer className='bg-[#222222]'>
       <div className='bg-[#34967C] h-6'></div>
-      <div className='flex flex-col gap-9 p-10 justify-between lg:flex-row'>
+      <div className='flex flex-col gap-9 p-10 justify-between md: lg:flex-row'>
 
-        <div className='flex flex-col '>
+        <div className='flex flex-col md:px-10 md:mb-4 '>
           <Image src='/assets/vector white.png' alt='logo' width={58.73} height={30.6} className='mb-4'/>
           <p className='text-[#CACACA] w-fit md:w-xl'>
             ALX is a platform where travelers can discover and book unique, comfortable, and affordable lodging options worldwide. From cozy city apartments and tranquil countryside retreats to exotic beachside villas, ALX connects you with the perfect place to stay for any trip.
@@ -49,16 +49,19 @@ const Footer: React.FC = () => {
       <hr className="border-t border-gray-100 mx-5 mt-10 mb-4" />
 
 
-      <div className='flex flex-col py-3 text-[#CACACA] gap-8 lg:gap-83 pb-6 lg:flex-row lg:justify-between lg:px-12 '>
-        <div className='text-sm mx-5 text-center w-fit lg:mx-0'>Some hotel requires you to cancel more than 24 hours before check-in. Details <span className='text-[#34967C]'>here</span></div>
-        <div className='mb-10 text-sm w-sm flex items-center justify-center gap-4 ml-4 mr-4  lg:mx-0 desktop:flex '>
+      <div className='flex flex-col py-3 text-[#CACACA] gap-8  pb-6 md:items-center md:justify-center lg:flex lg:flex-row lg:justify-between  lg:px-14 '>
+        <div className='text-sm mx-5 text-center w-fit md:text-base lg:mx-5'>Some hotel requires you to cancel more than 24 hours before check-in. Details <span className='text-[#34967C]'>here</span></div>
+        <div className='mb-10 text-sm flex items-center justify-center gap-4 ml-4 mr-4   md:mb-2'>
           <div>Terms of Service</div>
           <div>Policy service</div>
           <div>Cookies Policy</div>
-          <div className='hidden desktop:inline-block'>Partners</div>
+          <div className='hidden lg:inline-block'>Partners</div>  {/*desktop: '1728px' */}
         </div>
       </div>
 {/* md:ml-24 lg:ml-0 */}
+
+
+
     </footer>
   )
 }

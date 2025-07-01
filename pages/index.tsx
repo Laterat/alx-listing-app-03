@@ -22,9 +22,9 @@ const index: React.FC = () => {
         </div>
    
         <div className=' flex flex-row-reverse mt-4  md:justify-between md:flex-row'>
-          <div className='flex overflow-x-auto whitespace-nowrap hide-scrollbar font-semibold mb-7 lg:w-2xl space-x-6 lg:justify-between lg:space-x-0'>
+          <div className='flex overflow-x-auto whitespace-nowrap hide-scrollbar font-semibold mb-7 lg:w-3xl space-x-6 lg:justify-between lg:space-x-0'>
            
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 md:hidden lg:hidden">
                  <div className="w-[30px] h-[40px] relative">
                        <Image
                             src="/assets/frames/Frame 51.png"
@@ -38,14 +38,44 @@ const index: React.FC = () => {
             <Pill label='All' className=' sm:inline-block'/>
             <Pill label='Top Villa' className='sm:inline-block'/>
             <Pill label='Free Schedule' className=' sm:inline-block'/>
-            <Pill label='Book Now, Pay later' className=' lg:inline-block'/>
-            <Pill label='Self CheckIn' className='  lg:inline-block'/>
-            <Pill label='Instant Book' className=' lg:inline-block'/>
-          </div>
+            <Pill label='Book Now, Pay later' className='md:hidden lg:inline-block'/>
+            <Pill label='Self CheckIn' className='md:hidden  lg:inline-block'/>
+            <Pill label='Instant Book' className='md:hidden lg:inline-block'/>
 
-          <div className=' hidden w-auto space-x-6 lg:space-x-2'>
-            <Pill label='Filter' className='hidden sm:inline-block' />
-            <Pill label='Sort By: Highest Price' className='hidden md:inline-block'/>
+             <div className='hidden md:flex md:items-center md:space-x-2 lg:hidden'>
+                   <div className="w-[30px] h-[40px] relative">
+                       <Image
+                            src="/assets/frames/Frame 92.png"
+                            alt="Frame 51"
+                           fill
+                          className="object-cover"
+                        />
+                 </div>
+             </div>
+         </div>
+ 
+          <div className=' hidden md:flex md:w-auto space-x-2 lg:space-x-2'>
+              <div className="hidden md:inline-block md:items-center md:space-x-3 lg:hidden">
+                 <div className="w-[30px] h-[40px] relative">
+                       <Image
+                            src="/assets/frames/Frame 51.png"
+                            alt="Frame 51"
+                           fill
+                          className="object-cover"
+                        />
+                 </div>
+            </div>
+            <Pill label='' className='hidden sm:hidden md:hidden  lg:flex lg:items-center lg:gap-3 '><span>Filter</span>
+                       <Image
+                         src="/assets/frames/Frame Filter .png" // or wherever your filter icon is
+                         alt="Filter Icon"
+                         width={16}
+                         height={16}
+                         />
+            </Pill>
+            <Pill  label='' className='hidden sm:hidden md:inline-block'>
+              Sort By:  <span className="font-bold"> Highest Price</span>
+             </Pill>
           </div>
         </div>
       </section>
@@ -60,6 +90,7 @@ const index: React.FC = () => {
              <button  className='bg-black rounded-full px-3 py-2 w-30 mb-4'>Show more</button>
              <p className='text-sm text-black'>Click to see more listing</p>
         </section>
+        
     </>
   )
 }

@@ -55,4 +55,5 @@ export interface PillProps {
     bgColor?: string
     textColor?: string
     className?: string
+    children?: React.ReactNode
 }
