@@ -1,8 +1,6 @@
+# alx-listing-app-03
 
-
-# alx-listing-app-00
-
-# ALX Listing App 00
+# ALX Listing App 03
 
 This is a modern Airbnb clone scaffolded using Next.js, TypeScript, TailwindCSS, and ESLint.
 
