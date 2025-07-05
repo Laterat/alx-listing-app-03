@@ -13,7 +13,7 @@ const Header = () => {
         <div>Overseas trip? Get the latest information on travel guides</div>  
         <button className='bg-[#161117] rounded-full min-w-[86px] p-1'>More Info</button>
       </div>
-      <div className='flex justify-between items-center h-16 my-3 px-4 border  md:px-16'>
+      <div className='flex justify-between items-center h-16 my-3 px-4 border border-amber-50  md:px-16'>
         <Image src={logo} alt='logo' className='hidden md:inline-block'/>
 
         {/* Tablet view search */}
